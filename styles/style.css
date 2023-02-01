@@ -1,0 +1,167 @@
+@import url(reset.css);
+
+.wrapper {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 122%;
+    max-width: 800px;
+}
+
+.range-input {
+    display: flex;
+    justify-content: center;
+}
+
+.storage-block {
+    padding: 10px;
+}
+
+.storage-title {}
+
+.storage-value {
+    padding-left: 0;
+}
+
+.storage-range {
+    position: relative;
+}
+
+.storage-range::after {
+    position: absolute;
+    content: "1000";
+    bottom: -16px;
+    right: -6px;
+}
+
+.storage-range::before {
+    position: absolute;
+    content: "0";
+    bottom: -16px;
+    left: 0px;
+}
+
+.transfer-block {
+    padding: 10px;
+}
+
+.transfer-range {
+    position: relative;
+}
+
+.transfer-range::after {
+    position: absolute;
+    content: "1000";
+    bottom: -16px;
+    right: -6px;
+}
+
+.transfer-range::before {
+    position: absolute;
+    content: "0";
+    bottom: -16px;
+    left: 0px;
+}
+
+.price-block {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.company {
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    min-width: 300px;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+}
+
+
+.backblaze-graph {
+    display: inline-block;
+    height: 16px;
+    width: 70px;
+    color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.bunny-graph {
+    display: inline-block;
+    height: 16px;
+    width: 0px;
+    color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.scaleway-graph {
+    display: inline-block;
+    height: 16px;
+    width: 0px;
+    color: rgb(126, 126, 126);
+    background-color: #7e7e7e;
+}
+
+.vultr-graph {
+    display: inline-block;
+    height: 16px;
+    width: 50px;
+    color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+.vultr-block {
+    display: flex;
+}
+
+.backblaze-drive,
+.bunny-drive,
+.scaleway-drive,
+.vultr-drive {
+    min-width: 165px;
+}
+
+.backblaze-block,
+.bunny-block,
+.scaleway-block {
+    display: flex;
+}
+
+@media (max-width:800px) {
+    .price-block {
+        flex-direction: row;
+        min-height: 500px;
+    }
+
+    .company {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        min-height: 300px;
+        min-width: 0px;
+        gap: 5px;
+    }
+
+    .backblaze-graph {
+        height: 70px;
+        width: 16px;
+    }
+
+    .backblaze-block,
+    .bunny-block,
+    .scaleway-block,
+    .vultr-block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .backblaze-drive,
+    .bunny-drive,
+    .scaleway-drive,
+    .vultr-drive {
+        min-height: 45px;
+    }
+}

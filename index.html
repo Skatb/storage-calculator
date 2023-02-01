@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="range-input">
+			<div class="storage-block">
+				<div class="storage-title">Storage: <span class="storage-value">0</span></div>
+				<input class="storage-range" value="0" type="range" min="0" max="1000">
+			</div>
+			<div class="transfer-block">
+				<div class="transfer-title">Transfer: <span class="transfer-value">0</span></div>
+				<input class="transfer-range" value="0" type="range" min="0" max="1000">
+			</div>
+		</div>
+		<div class="price-block">
+			<div class="company">
+				<div class="backblaze-drive">
+					<div class="backblaze">backblaze</div>
+				</div>
+				<img class="icon" src="./img/backblaze.svg" alt="backblaze">
+				<div class="backblaze-block">
+					<div class="backblaze-graph price-color"></div>
+					<span class="backblaze-price price-value">7</span>
+					<span>$</span>
+				</div>
+			</div>
+			<div class="company">
+				<div class="bunny-drive">
+					<div class="bunny">bunny</div>
+					<input id="bunny-ssd" type="radio" name="bunny-drive" value="ssd">
+					<label for="bunny-ssd">SSD</label>
+					<input id="bunny-hdd" type="radio" name="bunny-drive" value="hdd">
+					<label for="bunny-hdd">HDD</label>
+				</div>
+				<img class="icon" src="./img/bunny.svg" alt="backblaze">
+				<div class="bunny-block">
+					<span class="bunny-graph price-color"></span>
+					<span class="bunny-price price-value">0</span>
+					<span>$</span>
+				</div>
+				<span class="backblaze-price"></span>
+			</div>
+			<div class="company">
+				<div class="scaleway-drive">
+					<div class="scaleway">scaleway</div>
+					<input id="scaleway-multi" type="radio" name="scaleway-drive" value="multi">
+					<label for="scaleway-multi">multi</label>
+					<input id="scaleway-single" type="radio" name="scaleway-drive" value="single">
+					<label for="scaleway-single">single</label>
+				</div>
+				<img class="icon" src="./img/scaleway.svg" alt="backblaze">
+				<div class="scaleway-block">
+					<span class="scaleway-graph price-color"></span>
+					<div class="scaleway-price price-value">0</div>
+					<span>$</span>
+				</div>
+			</div>
+
+
+			<div class="company">
+				<div class="vultr-drive">
+					<div class="vultr">vultr</div>
+				</div>
+				<img class="icon" src="./img/vultr.svg" alt="backblaze">
+				<div class="vultr-block">
+					<div class="vultr-graph price-color"></div>
+					<div class="vultr-price price-value">5</div>
+					<span>$</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
